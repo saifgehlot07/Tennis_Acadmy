@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --green: #96bd42;
+}
+
+/* ScrollBar Styling */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #96bd42;
+  border-radius: 10px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Navbar Styles */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul a {
+  padding: 0 10px;
+  color: #000;
+  transition: 0.4s;
+}
+
+nav ul a:hover {
+  color: var(--green);
+}
+
+nav .social-btns i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 5px;
+  background-color: var(--i);
+  color: #fff;
+}
+
+/* Header Styles */
+
+header {
+  position: relative;
+  height: 85vh;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(./resourses/tennis-bg1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-content {
+  color: #fff;
+  text-align: center;
+}
+
+header .header-content h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+header .header-content p {
+  padding: 10px 0;
+}
+
+header .header-content a {
+  color: #fff;
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--green);
+  padding: 6px 20px;
+}
+
+/* About Us */
+
+.about-us {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us .rows {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .left-content {
+  width: 50%;
+}
+
+.about-us .left-content .reviews {
+  margin: 1.4rem 0;
+}
+
+.about-us .left-content h1 {
+  color: var(--green);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.about-us .left-content .reviews p {
+  padding: 5px 0;
+}
+
+.about-us .left-content .reviews p i {
+  background-color: var(--green);
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.about-us .left-content a {
+  background-color: var(--green);
+  color: #fff;
+  padding: 6px 15px;
+  margin-top: 0.8rem;
+}
+
+.about-us .right-img img {
+  width: 100%;
+}
+
+/* Gallery */
+
+.Gallery {
+  height: 100%;
+  width: 100%;
+}
+
+.Gallery .head h1 {
+  color: var(--green);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 150px 200px;
+  gap: 1rem;
+}
+
+.gallery li:nth-child(2) {
+  grid-row: span 2;
+}
+
+.gallery li:nth-child(4) {
+  grid-row: span 3;
+}
+
+.gallery li {
+  min-width: 0;
+  padding: 14px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gallery li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
