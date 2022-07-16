@@ -11,7 +11,7 @@
       href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
     />
     <!-- Style Link -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Night Hurl | Tennis Acadmy</title>
   </head>
   <body>
@@ -19,18 +19,21 @@
     <main>
       <nav>
         <h1>NightHurl</h1>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Philosophy</a></li>
-          <li><a href="#">Trainings</a></li>
-          <li><a href="#">Testimonial</a></li>
---          <li><a href="#">Contact</a></li>
+        <ul class="hidden" id="ulheader">
+          <li><a href="#home" id="menu-links">Home</a></li>
+          <li><a href="#about" id="menu-links">About</a></li>
+          <li><a href="#gallery" id="menu-links">Philosophy</a></li>
+          <li><a href="#" id="menu-links">Testimonial</a></li>
+          <li><a href="#" id="menu-links">Contact</a></li>
         </ul>
         <div class="social-btns">
           <i style="--i: #1877f2" class="uil uil-facebook-f"></i>
           <i style="--i: #1da1f2" class="uil uil-twitter"></i>
           <i style="--i: #cd201f" class="uil uil-youtube"></i>
+        </div>
+        <div class="hamburger">
+          <i class="uil uil-bars" id="open"></i>
+          <i class="uil uil-times hidden" id="close"></i>
         </div>
       </nav>
       <header>
@@ -43,7 +46,7 @@
           <a href="#">Learn More</a>
         </div>
       </header>
-      <section class="about-us">
+      <section class="about-us" id="about">
         <div class="rows container">
           <div class="left-content">
             <h1>About Us</h1>
@@ -72,7 +75,7 @@
           </div>
         </div>
       </section>
-      <section class="Gallery">
+      <section class="Gallery" id="gallery">
         <div class="head">
             <h1>Our Philosophy</h1>
         </div>
